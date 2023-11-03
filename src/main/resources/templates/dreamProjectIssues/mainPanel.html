@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Página con SVG de Fondo</title>
+    <style>
+        /* Estilos para el menú desplegable */
+        .menu {
+            width: 250px;
+            height: 100%;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            left: 0;
+            overflow-x: hidden;
+            padding-top: 60px;
+        }
+
+        .menu a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+
+        /* Estilos para los contadores en el borde superior derecho */
+        .contador {
+            position: fixed;
+            top: 0;
+            right: 0;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Estilos para el contenido principal */
+        .content {
+            background-size: cover;
+            padding-left: 250px;
+            /* Ancho del menú desplegable */
+            padding-top: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Menú desplegable -->
+    <div class="menu">
+        <a href="#">Opción 1</a>
+        <a href="#">Opción 2</a>
+        <a href="#">Opción 3</a>
+        <!-- Agrega más opciones según sea necesario -->
+    </div>
+
+    <!-- Contadores en el borde superior derecho -->
+    <div class="contador">
+        <p>Contador 1: <span id="contador1">0</span></p>
+        <p>Contador 2: <span id="contador2">1</span></p>
+    </div>
+
+    <div class="content"
+        th:replace="dreamProjectIssues/svgImageLayout :: rfqSVGFragment()">
+    </div>
+
+    <!-- Contenido principal -->
+</body>
+
+</html>
