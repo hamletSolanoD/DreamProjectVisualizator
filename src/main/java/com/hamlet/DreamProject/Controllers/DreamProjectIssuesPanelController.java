@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 @Controller
-public class DreamProjectIssuesPanelController {
+public class DreamProjectIssuesPanelController { 
 
 
-    @GetMapping("/candidatospoliticos/{id}")
+    @GetMapping("/candidatospoliticos/{id}") 
     public String verDetallesCandidato(@PathVariable Long id, Model model) {
         
         return "dreamProjectIssues/mainPanel"; 

@@ -1,47 +1,7 @@
 <th:block xmlns:th="http://www.thymeleaf.org" th:fragment="rfqSVGFragment()">
-    <svg width="500" height="90" xmlns="http://www.w3.org/2000/svg" style="background-color: #D0E5FF;">
+    <svg class="content" >
 
-        <!-- Circulos principales -->
-        <!-- SOR -->
-        <circle cx="50" cy="40" r="25" stroke="black" stroke-width="1" fill="green" id="sor" cursor="pointer" />
-        <text x="50" y="40" font-family="Arial" font-size="10" fill="white" text-anchor="middle" dy=".3em">SOR</text>
-
-        <!-- Work Order -->
-        <circle id="order" cx="150" cy="40" r="25" stroke="black" stroke-width="1" fill="green" cursor="pointer" />
-        <text x="150" y="40" font-family="Arial" font-size="10" fill="white" text-anchor="middle" dy=".3em">Order</text>
-
-        <!-- RFQ -->
-        <circle cx="250" cy="40" r="25" stroke="black" stroke-width="1" fill="green" cursor="pointer" id="rfq" />
-        <text x="250" y="40" font-family="Arial" font-size="10" fill="white" text-anchor="middle" dy=".3em">RFQ</text>
-
-        <!-- CQN -->
-        <circle cx="350" cy="40" r="25" stroke="#0B5587" stroke-width="1" fill="#F7F7A2" cursor="pointer" id="cqn" />
-        <text x="350" y="40" font-family="Arial" font-size="10" fill="black" text-anchor="middle" dy=".3em">CQN</text>
-
-        <!-- AQN -->
-        <circle cx="450" cy="40" r="25" stroke="black" stroke-width="1" fill="lightgray" cursor="pointer" id="aqn" />
-        <text x="450" y="40" font-family="Arial" font-size="10" fill="black" text-anchor="middle" dy=".3em">AQN</text>
-
-        <!-- Puntos guía entre los círculos -->
-        <!-- Entre SOR y Work Order -->
-        <circle cx="80" cy="40" r="2" fill="black" />
-        <circle cx="100" cy="40" r="2" fill="black" />
-        <circle cx="120" cy="40" r="2" fill="black" />
-
-        <!-- Entre Work Order y RFQ -->
-        <circle cx="180" cy="40" r="2" fill="black" />
-        <circle cx="200" cy="40" r="2" fill="black" />
-        <circle cx="220" cy="40" r="2" fill="black" />
-
-        <!-- Entre RFQ y CQN -->
-        <circle cx="280" cy="40" r="2" fill="black" />
-        <circle cx="300" cy="40" r="2" fill="black" />
-        <circle cx="320" cy="40" r="2" fill="black" />
-
-        <!-- Entre CQN y AQN -->
-        <circle cx="380" cy="40" r="2" fill="black" />
-        <circle cx="400" cy="40" r="2" fill="black" />
-        <circle cx="420" cy="40" r="2" fill="black" />
+   
         <!-- <script type="text/ecmascript">
             document.addEventListener("DOMContentLoaded", function (event) {
                 var orderCircle = document.getElementById("order");

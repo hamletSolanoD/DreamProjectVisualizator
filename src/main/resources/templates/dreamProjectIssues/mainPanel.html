@@ -9,7 +9,7 @@
         .menu {
             width: 250px;
             height: 100%;
-            background-color: #333;
+            background-color: #33333391;
             position: fixed;
             top: 0;
             left: 0;
@@ -37,10 +37,9 @@
 
         /* Estilos para el contenido principal */
         .content {
-            background-size: cover;
+            width: 70%;
+            height: 100%;
             padding-left: 250px;
-            /* Ancho del menú desplegable */
-            padding-top: 60px;
         }
     </style>
 </head>
@@ -56,11 +55,11 @@
 
     <!-- Contadores en el borde superior derecho -->
     <div class="contador">
-        <p>Contador 1: <span id="contador1">0</span></p>
-        <p>Contador 2: <span id="contador2">1</span></p>
+        <p>Contador 1: <span id="contador1">4</span></p>
+        <p>Contador 2: <span id="contador2">2</span></p>
     </div>
 
-    <div class="content"
+    <div
         th:replace="dreamProjectIssues/svgImageLayout :: rfqSVGFragment()">
     </div>
 
